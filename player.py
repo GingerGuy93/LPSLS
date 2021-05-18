@@ -1,5 +1,5 @@
 class Player:
-    def __init__(self, gesture):
+    def __init__(self):
         self.name = ""
         self.score = 0
 
@@ -13,7 +13,7 @@ class Rock:
 class Paper:
     def __init__(self):
         self.name = "paper"
-        self.wins_against = ['Spock', 'Rock']
+        self.wins_against = ['spock', 'rock']
 
 
 class Scissor:

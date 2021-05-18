@@ -6,5 +6,5 @@ class Computer(Player):
 
     def __init__(self):
         super().__init__()
-        self.gesture = random.choice(self.gestures)
         self.name = "AI"
+        self.score = 0
