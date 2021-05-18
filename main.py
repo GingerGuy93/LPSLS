@@ -1,4 +1,4 @@
-
+from play_game import PlayGame
 
 
 # Press the green button in the gutter to run the script.

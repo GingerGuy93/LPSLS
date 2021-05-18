@@ -1,10 +1,35 @@
 class Player:
     def __init__(self, gesture):
         self.name = ""
-        self.gestures = ["Rock", "Paper", "Scissors", "Lizard", "Spock"]
         self.score = 0
-        self.chosen_gesture = gesture
 
-    def win(self):
-        self.score += 1
+
+class Rock:
+    def __init__(self):
+        self.name = "rock"
+        self.wins_against = ['lizard', 'scissors']
+
+
+class Paper:
+    def __init__(self):
+        self.name = "paper"
+        self.wins_against = ['Spock', 'Rock']
+
+
+class Scissor:
+    def __init__(self):
+        self.name = "scissor"
+        self.wins_against = ['lizard', 'paper']
+
+
+class Lizard:
+    def __init__(self):
+        self.name = "lizard"
+        self.wins_against = ['spock', 'paper']
+
+
+class Spock:
+    def __init__(self):
+        self.name = 'spock'
+        self.wins_against = ['scissors', 'rock']
 
